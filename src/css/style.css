@@ -1,13 +1,82 @@
-body {
+/* Universal */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+body{
+  font-family: sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Oxygen', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Nav */
+nav{
+  background-color: #262626;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+}
+a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Content */
+.content{
+  text-align: center;
+  flex-grow: 1;
+  padding: 1em;
+}
+.content h1{
+  display: inline-block;
+  background-color: #262626;
+  padding: .5em 3em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Home */
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+
+}
+.gallery img{
+  width: 30%;
+  height: 50em;
+  margin: .3em;
+  object-fit:cover;
+  border: .5em solid white;
+}
+/* Footer */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  justify-self: flex-end;
+  padding: 2em;
+  color: white;
+  background-color: #262626 ;
+  margin: 0;
 }
