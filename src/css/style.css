@@ -54,20 +54,6 @@ a{
   gap: 1em;
 }
 
-/* Home */
-.gallery{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1em;
-
-}
-.gallery img{
-  width: 30%;
-  height: 50em;
-  margin: .3em;
-  object-fit:cover;
-  border: .5em solid white;
-}
 /* Footer */
 footer{
   display: flex;
